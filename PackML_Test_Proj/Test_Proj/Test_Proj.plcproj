@@ -3,75 +3,48 @@
   <PropertyGroup>
     <FileVersion>1.0.0.0</FileVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{40f6ae9d-1112-4543-92a2-52824862e79c}</ProjectGuid>
+    <ProjectGuid>{40976909-2300-4132-9f10-d040a369eb23}</ProjectGuid>
     <SubObjectsSortedByName>true</SubObjectsSortedByName>
     <DownloadApplicationInfo>true</DownloadApplicationInfo>
     <WriteProductVersion>false</WriteProductVersion>
     <GenerateTpy>false</GenerateTpy>
-    <Name>PackMLLib</Name>
+    <Name>Test_Proj</Name>
     <ProgramVersion>3.1.4026.13</ProgramVersion>
-    <Application>{838ffc5f-1f83-4467-b7c5-f728b08247d1}</Application>
-    <TypeSystem>{e531437c-1aa0-40ff-8ac8-f574b33d49dd}</TypeSystem>
-    <Implicit_Task_Info>{9003d4a4-2ccd-4432-bfcd-adbebf646cf2}</Implicit_Task_Info>
-    <Implicit_KindOfTask>{21f6ab83-280d-4f27-a35b-894200489534}</Implicit_KindOfTask>
-    <Implicit_Jitter_Distribution>{6a8fb277-898d-4a0f-be7f-98e744cd173c}</Implicit_Jitter_Distribution>
-    <LibraryReferences>{3803cfea-ee54-44fa-89b7-291552f3f6d6}</LibraryReferences>
-    <Company>Beckhoff UK</Company>
-    <Released>false</Released>
-    <AllowChecksForLibrary>false</AllowChecksForLibrary>
-    <POUsForPropertyAccessIncluded>false</POUsForPropertyAccessIncluded>
-    <GlobalVersionStructureIncluded>false</GlobalVersionStructureIncluded>
-    <Title>Pack ML Library</Title>
-    <ProjectVersion>1.0.0.0</ProjectVersion>
-    <LibraryCategories>
-      <LibraryCategory xmlns="">
-        <Id>{a4a00b8a-9270-48aa-b020-371bd9c3e701}</Id>
-        <Version>1.0.0.0</Version>
-        <DefaultName>Beckhoff UK</DefaultName>
-      </LibraryCategory>
-    </LibraryCategories>
-    <SelectedLibraryCategories>
-      <Id xmlns="">{a4a00b8a-9270-48aa-b020-371bd9c3e701}</Id>
-    </SelectedLibraryCategories>
-    <Author>Chris Knight</Author>
+    <Application>{72f42f01-77c1-40b2-bec0-ced29bacac07}</Application>
+    <TypeSystem>{85bdbe91-98ee-40f9-95f5-dab9303dd284}</TypeSystem>
+    <Implicit_Task_Info>{6a55efcd-475e-47b8-9378-84ee2b441c7a}</Implicit_Task_Info>
+    <Implicit_KindOfTask>{796d5f74-abc8-4ce1-8013-7ab8696bf1b8}</Implicit_KindOfTask>
+    <Implicit_Jitter_Distribution>{97d2331b-344d-4a7e-a972-8280c17945dc}</Implicit_Jitter_Distribution>
+    <LibraryReferences>{092d9667-f5b4-4dfd-8995-3152b4d55777}</LibraryReferences>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="PackML" />
-    <Folder Include="PackML_Method_Pattern" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="PackML\IPmlStateMachine.TcIO">
+    <Compile Include="PlcTask.TcTTO">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="PackML\PMLStateMachine.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="PackML_Method_Pattern\PML_Method_Base.TcPOU">
+    <Compile Include="POUs\MAIN.TcPOU">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <PlaceholderReference Include="Base Library">
-      <DefaultResolution>Base Library, * (Beckhoff UK)</DefaultResolution>
-      <Namespace>Base_Library</Namespace>
-    </PlaceholderReference>
+    <Folder Include="DUTs" />
+    <Folder Include="GVLs" />
+    <Folder Include="VISUs" />
+    <Folder Include="POUs" />
+  </ItemGroup>
+  <ItemGroup>
     <PlaceholderReference Include="Tc2_Standard">
       <DefaultResolution>Tc2_Standard, * (Beckhoff Automation GmbH)</DefaultResolution>
       <Namespace>Tc2_Standard</Namespace>
     </PlaceholderReference>
+    <PlaceholderReference Include="Tc2_System">
+      <DefaultResolution>Tc2_System, * (Beckhoff Automation GmbH)</DefaultResolution>
+      <Namespace>Tc2_System</Namespace>
+    </PlaceholderReference>
     <PlaceholderReference Include="Tc3_Module">
       <DefaultResolution>Tc3_Module, * (Beckhoff Automation GmbH)</DefaultResolution>
       <Namespace>Tc3_Module</Namespace>
+      <SystemLibrary>true</SystemLibrary>
     </PlaceholderReference>
-    <PlaceholderReference Include="Tc3_PackML_V2">
-      <DefaultResolution>Tc3_PackML_V2, * (Beckhoff Automation GmbH)</DefaultResolution>
-      <Namespace>Tc3_PackML_V2</Namespace>
-    </PlaceholderReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="PackMLLib.tmc">
-      <SubType>Content</SubType>
-    </None>
   </ItemGroup>
   <ProjectExtensions>
     <PlcProjectOptions>
