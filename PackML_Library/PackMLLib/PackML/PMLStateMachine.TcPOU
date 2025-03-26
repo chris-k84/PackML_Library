@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1">
   <POU Name="PMLStateMachine" Id="{516e0c08-a37e-42cd-8e77-8f251b5a3702}" SpecialFunc="None">
-    <Declaration><![CDATA[FUNCTION_BLOCK PMLStateMachine EXTENDS CyclicBase IMPLEMENTS IPmlStateMachine
+    <Declaration><![CDATA[FUNCTION_BLOCK PMLStateMachine IMPLEMENTS I_Cyclic, IPmlStateMachine
 VAR_INPUT
 END_VAR
 VAR_OUTPUT

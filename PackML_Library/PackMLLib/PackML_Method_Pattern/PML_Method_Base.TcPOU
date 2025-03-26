@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1">
   <POU Name="PML_Method_Base" Id="{44604a6d-2a49-42c2-9e01-3b91f586bd10}" SpecialFunc="None">
-    <Declaration><![CDATA[FUNCTION_BLOCK PML_Method_Base EXTENDS CyclicBase
+    <Declaration><![CDATA[FUNCTION_BLOCK PML_Method_Base IMPLEMENTS I_Cyclic
 VAR_INPUT
 END_VAR
 VAR_OUTPUT

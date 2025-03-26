@@ -9,7 +9,7 @@
     <WriteProductVersion>false</WriteProductVersion>
     <GenerateTpy>false</GenerateTpy>
     <Name>Test_Proj</Name>
-    <ProgramVersion>3.1.4026.13</ProgramVersion>
+    <ProgramVersion>3.1.4026.14</ProgramVersion>
     <Application>{72f42f01-77c1-40b2-bec0-ced29bacac07}</Application>
     <TypeSystem>{85bdbe91-98ee-40f9-95f5-dab9303dd284}</TypeSystem>
     <Implicit_Task_Info>{6a55efcd-475e-47b8-9378-84ee2b441c7a}</Implicit_Task_Info>
@@ -63,6 +63,12 @@
         <o>
           <v n="Name">"{29BD8D0C-3586-4548-BB48-497B9A01693F}"</v>
           <d n="SubKeys" t="Hashtable" ckt="String" cvt="OptionKey">
+            <v>NamingConventions</v>
+            <o>
+              <v n="Name">"NamingConventions"</v>
+              <d n="SubKeys" t="Hashtable" />
+              <d n="Values" t="Hashtable" />
+            </o>
             <v>Rules</v>
             <o>
               <v n="Name">"Rules"</v>
