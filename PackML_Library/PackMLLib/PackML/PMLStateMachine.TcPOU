@@ -37,8 +37,8 @@ END_VAR
 END_IF
 
 _pmlStateMachine(eMode := _pmlModeMachine.eModeStatus, stSubUnitInfoRef := _SubUnitReference);
-_pmlModeMachine(eState := _pmlStateMachine.eState, bExecute := modeChangeTrigger.Q);
-modeChangeTrigger();
+_pmlModeMachine(eState := _pmlStateMachine.eState);
+_pmlModeMachine.bExecute := FALSE;
 Cycle := S_OK;]]></ST>
       </Implementation>
     </Method>
@@ -68,7 +68,7 @@ END_VAR
 ]]></Declaration>
       <Implementation>
         <ST><![CDATA[_pmlModeMachine.eModeCommand := Mode;
-modeChangeTrigger.CLK := TRUE;
+_pmlModeMachine.bExecute := TRUE;
 PmlModeCommand := TRUE;]]></ST>
       </Implementation>
     </Method>
